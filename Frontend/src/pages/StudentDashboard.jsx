@@ -11,6 +11,7 @@ import VideoUploadModal from '../components/StudentDashboard/VideoUploadModal';
 import PageLoader from '../components/PageLoader';
 import { formatDistanceToNow } from 'date-fns';
 import { fetchStudentTasks } from '../services/studentTasksApi';
+import ActivityTimeline from '../components/Common/ActivityTimeline';
 
 // Mentor Card Component with Availability
 const MentorCard = ({ mentor, onNavigate }) => {
@@ -1448,6 +1449,9 @@ const UserDashboard = () => {
                 </div>
               )}
             </div>
+
+            {/* Activity Timeline */}
+            <ActivityTimeline />
           </aside>
         </div>
       </div>

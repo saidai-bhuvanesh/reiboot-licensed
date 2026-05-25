@@ -8,6 +8,7 @@ import { FiUpload, FiX, FiCalendar, FiUsers, FiClock, FiEdit3, FiSettings, FiLog
 import { formatDistanceToNow } from 'date-fns';
 import KarmaPointsCard from '../components/KarmaPointsCard/KarmaPointsCard';
 import PageLoader from '../components/PageLoader';
+import ActivityTimeline from '../components/Common/ActivityTimeline';
 
 const MentorDashboard = () => {
   const navigate = useNavigate();
@@ -1857,6 +1858,9 @@ const MentorDashboard = () => {
               </div>
             )}
           </div>
+
+          {/* Activity Timeline */}
+          <ActivityTimeline />
         </aside>
       </div>
 
